@@ -9,8 +9,8 @@ function RegularComponent(){
   return <h1>Regular Information</h1>
 }
 
-function App(props) { 
-  return (<>{props.authorized ? <SecretComponent /> : <RegularComponent />}</>); 
+function App({authorized}) { 
+  return (<>{authorized ? <SecretComponent /> : <RegularComponent />}</>); 
 }
 
 export default App;
