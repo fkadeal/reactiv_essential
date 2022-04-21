@@ -1,0 +1,1 @@
+export function testTwo(a) {return 2*a;}
